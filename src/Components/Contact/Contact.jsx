@@ -39,7 +39,7 @@ const Contact = () => {
             <div className="contact-section">
                 <div className="contact-left">
                     <h1>Hablemos :)</h1>
-                    <p>Me encuentro actualmente en proceso activo de búsqueda de empleo, por lo que les animo a que no duden en contactarme si tienen alguna oferta laboral que consideren que pueda ser de mi interés. Estoy disponible para entrevistas en cualquier momento.</p>
+                    <p>En este momento me encuentro trabajando, pero escucho ofertas que supongan un desafío técnico o una evolución profesional. Si crees que mi perfil encaja en tu equipo, estaré encantado de charlar contigo. <br></br><br></br> <strong>Contesto en menos de 24 horas</strong></p>
                     <div className="contact-details">
                         <div className="contact-detail">
                             <img src={mail_icon} alt="" /><p>danielmartinezcarreira@gmail.com</p>

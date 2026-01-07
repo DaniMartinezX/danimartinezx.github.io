@@ -11,12 +11,12 @@ const Hero = () => {
     return (
         <div id='home' className='hero'>
             <img src={perfil_sinfondo} alt="" />
-            <h1><span>Soy Daniel Martínez,</span> desarrollador de aplicaciones multiplataforma.</h1>
-            <p>Desarrollo de aplicaciones | Análisis de datos & IA</p>
-            <p>A Coruña</p>
+            <h1><span>Soy Daniel Martínez,</span> <br></br>.NET Developer | IA | Big Data</h1>
+            <p>Sistemas escalables, arquitecturas .NET y soluciones Big Data</p>
+            <p>A Coruña, España</p>
             <div className="hero-action">
                 <div className="hero-connect"><AnchorLink className='anchor-link' offset={50} href='#contact'>Conecta conmigo</AnchorLink></div>
-                <a href="https://drive.google.com/file/d/1ABhsZy2p8D4ThoPkeIlS8Q0zrXVjMA0h/view?usp=drive_link" target="_blank" className="hero-resume" >Mi currículum</a>
+                <a href="https://drive.google.com/file/d/1L284Wydx1ahXhgTcO5wPySEakrtnqgV9/view?usp=sharing" target="_blank" className="hero-resume" >Mi currículum</a>
             </div>
         </div>
     )
