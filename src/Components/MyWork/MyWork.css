@@ -25,6 +25,7 @@
 }
 
 .mywork-container {
+    position: relative;
     display: grid;
     grid-template-columns: 1fr;
     gap: 40px;
@@ -97,6 +98,35 @@
     gap: 30px;
     transition: 0.6s;
 }
+
+.mywork-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    font-size: 1.8rem;
+    align-items: right;
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    background: linear-gradient(135deg,
+            rgba(184, 50, 225, 0.22),
+            rgba(255, 140, 50, 0.18));
+
+}
+
+.mywork__bullets {
+    margin-top: 1rem;
+    padding-left: 1.8rem;
+}
+
+.mywork__bullets li {
+    margin: 0.55rem 0;
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.85);
+}
+
 
 @media(max-width:768px) {
     .mywork {

@@ -26,10 +26,23 @@ const MyWork = () => {
                         href = `/works/work_${work.w_linkend}.html`
                     }
 
-                    return <a key={index} href={href} target="_blank" className="mywork-format">
-                        <h3>{work.w_no}</h3>
-                        <h2>{work.w_name}</h2>
+                    return <a key={index} title="Acceder al proyecto" href={href} target="_blank" className="mywork-format">
+                        {work.new === true ? (
+                            <span className="mywork-badge">¡Nuevo!</span>
+                        ) : null}
+
+                        <h1>{work.w_name}</h1>
+                        <br></br>
                         <p>{work.w_des}</p>
+
+                        {work.technologies_used?.length ? (
+                            <ul className="mywork__bullets">
+                                {work.technologies_used.map((b, i) => (
+                                    <li key={i}>{b}</li>
+                                ))}
+                            </ul>
+                        ) : null}
+
                     </a>
                 })}
             </div>
