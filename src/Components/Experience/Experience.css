@@ -24,11 +24,15 @@
     z-index: -1;
 }
 
+.experience__link {
+    text-decoration: none;
+}
+
 /* List */
 .experience__list {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 2.5rem;
 }
 
 /* Row layout */

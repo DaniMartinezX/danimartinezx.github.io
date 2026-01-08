@@ -17,6 +17,7 @@ const experience = [
             "Mantenimiento evolutivo y corrección de incidencias en producción",
         ],
         stack: ["ASP .NET MVC", ".NET 8", "SQL Server", "Microservicios", "APIs REST"],
+        link: "https://www.altiacompany.com/"
     },
     {
         company: "Accenture",
@@ -32,6 +33,7 @@ const experience = [
             "Integración con Firebase y persistencia local con Room",
         ],
         stack: ["Flutter", "Kotlin", "MVVM", "Retrofit", "Firebase", "Room"],
+        link: "https://www.accenture.com/es-es"
     }
 
 ];
@@ -58,33 +60,37 @@ export default function Experience() {
 
                         {/* Right card */}
                         <div className="experience__card">
-                            <div className="experience__cardTop">
-                                <h3 className="experience__role">{item.role}</h3>
+                            <a key={idx} href={item.link} title={`Visitar la página web de ${item.company}`} className="experience__link" target="_blank" rel="noopener noreferrer">
 
-                                {item.period.toLowerCase().includes("actualidad") ? (
-                                    <span className="experience__badge">Actual</span>
-                                ) : null}
-                            </div>
+                                <div className="experience__cardTop">
+                                    <h3 className="experience__role">{item.role}</h3>
 
-                            <p className="experience__summary">{item.summary}</p>
-
-                            {item.bullets?.length ? (
-                                <ul className="experience__bullets">
-                                    {item.bullets.map((b, i) => (
-                                        <li key={i}>{b}</li>
-                                    ))}
-                                </ul>
-                            ) : null}
-
-                            {item.stack?.length ? (
-                                <div className="experience__stack">
-                                    {item.stack.map((t, i) => (
-                                        <span className="experience__tag" key={i}>
-                                            {t}
-                                        </span>
-                                    ))}
+                                    {item.period.toLowerCase().includes("actualidad") ? (
+                                        <span className="experience__badge">Actual</span>
+                                    ) : null}
                                 </div>
-                            ) : null}
+
+                                <p className="experience__summary">{item.summary}</p>
+
+                                {item.bullets?.length ? (
+                                    <ul className="experience__bullets">
+                                        {item.bullets.map((b, i) => (
+                                            <li key={i}>{b}</li>
+                                        ))}
+                                    </ul>
+                                ) : null}
+
+                                {item.stack?.length ? (
+                                    <div className="experience__stack">
+                                        {item.stack.map((t, i) => (
+                                            <span className="experience__tag" key={i}>
+                                                {t}
+                                            </span>
+                                        ))}
+                                    </div>
+                                ) : null}
+
+                            </a>
                         </div>
                     </article>
                 ))}

@@ -10,7 +10,9 @@ const Hero = () => {
 
     return (
         <div id='home' className='hero'>
-            <img src={perfil_sinfondo} alt="" />
+            <a title='Visita mi Linkedin' target='_blank' rel="noopener noreferrer" href='https://www.linkedin.com/in/danielmartinezcarreira/'>
+                <img src={perfil_sinfondo} alt="" />
+            </a>
             <h1><span>Soy Daniel Martínez,</span> <br></br>.NET Developer | IA | Big Data</h1>
             <p>Sistemas escalables, arquitecturas .NET y soluciones Big Data</p>
             <p>A Coruña, España</p>
