@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     gap: 80px;
-    margin: 80px 170px;
+    margin: 80px 350px;
 }
 
 .about-title {
@@ -24,9 +24,10 @@
     z-index: -1;
 }
 
-.about-section {
+.about-sections {
     display: flex;
-    gap: 80px;
+    align-items: center;
+    gap: 60px;
 }
 
 .about-sections img {
@@ -51,6 +52,10 @@
     gap: 80px;
     font-size: 24px;
     font-weight: 500;
+}
+
+.about-para-title {
+    font-size: 30px;
 }
 
 .about-skills {

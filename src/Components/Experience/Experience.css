@@ -4,15 +4,7 @@
     align-items: center;
     justify-content: center;
     gap: 80px;
-
-    width: 100%;
-    max-width: 1400px;
-    /* prueba 1280 / 1400 / 1520 */
-    margin: 80px auto;
-    /* centra */
-    padding: 0 32px;
-    /* margen lateral “flexible” */
-    box-sizing: border-box;
+    margin: 80px 350px;
 }
 
 .experience-title {

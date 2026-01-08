@@ -2,7 +2,6 @@ import React from 'react'
 import './About.css'
 import theme_pattern from '../../assets/theme_pattern.svg'
 import profile_img from '../../assets/img_about.jpg'
-import Education from '../../Components/About/education'
 
 
 const About = () => {
@@ -18,10 +17,9 @@ const About = () => {
                 </div>
                 <div className="about-right">
                     <div className="about-para">
-                        <p>Técnico Superior en DAM | Especializado en IA & Big Data</p>
+                        <p className='about-para-title'>Técnico Superior en DAM | Especializado en IA & Big Data</p>
                         <p>Actualmente desarrollo aplicaciones web para el sector logístico utilizando ASP .NET MVC y SQL Server. Diseño y construyo APIs basadas en microservicios con .NET 8, y participo activamente en reuniones con clientes para el análisis de requisitos y definición de nuevas funcionalidades.</p>
                     </div>
-                    <Education></Education>
                     {/* <div className="about-skills">
                         <div className="about-skill"><p>HTML & CSS</p><hr style={{ width: "50%" }} /></div>
                         <div className="about-skill"><p>React JS</p><hr style={{ width: "40%" }} /></div>
