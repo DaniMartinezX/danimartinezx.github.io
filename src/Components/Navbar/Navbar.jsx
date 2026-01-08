@@ -23,7 +23,17 @@ const Navbar = () => {
 
     return (
         <div className='navbar'>
-            <a href="https://github.com/DaniMartinezX" title='Visitar mi GitHub' target='_blank' rel="noopener noreferrer" alt="Visitar mi GitHub">
+            <a href="https://github.com/DaniMartinezX"
+                title='Visitar mi GitHub'
+                target='_blank'
+                rel="noopener noreferrer"
+                alt="Visitar mi GitHub"
+                onClick={() =>
+                    window.gtag?.("event", "click_github", {
+                        event_category: "engagement",
+                        event_label: "GitHub Profile",
+                    })
+                }>
                 <img className="navbar-logo" src={logo} />
             </a>
             <img src={menu_open} onClick={openMenu} alt="" className='nav-mob-open' />

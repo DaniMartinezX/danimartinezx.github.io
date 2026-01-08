@@ -21,7 +21,7 @@ const Footer = () => {
             </div>
             <hr />
             <div className="footer-bottom">
-                <p className="footer-bottom-left">© {new Date().getFullYear()} Daniel Martínez.</p>
+                <p className="footer-bottom-left">© {new Date().getFullYear()} Daniel Martínez. Esta web utiliza analítica básica (Google Analytics) para medir visitas y clics.</p>
                 {/* <div className="footer-bottom-right">
                     <p>Término de servicios</p>
                     <p>Política de privacidad</p>
