@@ -20,10 +20,10 @@ const MyWork = () => {
                 {mywork_data.map((work, index) => {
 
                     let href;
-                    if (index === 3) {
-                        href = `https://github.com/DaniMartinezX/Meals-app`
+                    if (work.w_linkend === null) {
+                        href = work.w_full_link
                     } else {
-                        href = `src/assets/works/work_${index}.html`
+                        href = `/works/work_${work.w_linkend}.html`
                     }
 
                     return <a key={index} href={href} target="_blank" className="mywork-format">
