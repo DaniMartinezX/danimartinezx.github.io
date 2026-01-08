@@ -1,0 +1,175 @@
+.experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+
+    width: 100%;
+    max-width: 1400px;
+    /* prueba 1280 / 1400 / 1520 */
+    margin: 80px auto;
+    /* centra */
+    padding: 0 32px;
+    /* margen lateral “flexible” */
+    box-sizing: border-box;
+}
+
+.experience-title {
+    position: relative;
+}
+
+.experience-title h1 {
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.experience-title img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+/* List */
+.experience__list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Row layout */
+.experience__row {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 1.25rem;
+}
+
+/* Left rail */
+.experience__rail {
+    padding: 1rem 0.25rem 1rem 0;
+}
+
+.experience__period {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.75);
+    padding: 0.35rem 0.75rem;
+    display: inline-flex;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.experience__company {
+    margin-top: 0.9rem;
+    font-size: 1.7rem;
+    font-weight: 650;
+    color: #fff;
+}
+
+.experience__location {
+    margin-top: 0.35rem;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Card */
+.experience__card {
+    position: relative;
+    padding: 1.4rem;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.experience__card::before {
+    content: "";
+    position: absolute;
+    inset: -2px;
+    background: radial-gradient(600px circle at 20% 0%,
+            rgba(184, 50, 225, 0.18),
+            transparent 40%),
+        radial-gradient(600px circle at 85% 80%,
+            rgba(255, 140, 50, 0.16),
+            transparent 45%);
+    pointer-events: none;
+}
+
+.experience__card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.45);
+}
+
+/* Card content */
+.experience__cardTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.experience__role {
+    font-size: 1.8rem;
+    font-weight: 650;
+    color: #fff;
+}
+
+.experience__badge {
+    font-size: 1.4rem;
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    background: linear-gradient(135deg,
+            rgba(184, 50, 225, 0.22),
+            rgba(255, 140, 50, 0.18));
+}
+
+.experience__summary {
+    margin-top: 0.9rem;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.82);
+}
+
+.experience__bullets {
+    margin-top: 1rem;
+    padding-left: 1.8rem;
+}
+
+.experience__bullets li {
+    margin: 0.55rem 0;
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.experience__stack {
+    margin-top: 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.experience__tag {
+    font-size: 0.9rem;
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    color: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .experience__row {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .experience__title {
+        font-size: 1.6rem;
+    }
+}
