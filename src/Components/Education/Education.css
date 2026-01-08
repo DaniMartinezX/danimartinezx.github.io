@@ -1,9 +1,29 @@
-.education-title {
-    font-size: 2.5rem;
-    font-weight: 600;
-    margin-bottom: 2rem;
-    color: #ffffff;
+.education {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 350px;
 }
+
+.education-title {
+    position: relative;
+}
+
+.education-title h1 {
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.education-title img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
 
 /* Timeline */
 .education-timeline {
@@ -66,7 +86,7 @@
 }
 
 .education-header h3 {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     font-weight: 600;
     color: #ffffff;
 }
@@ -85,14 +105,14 @@
 .education-institution {
     display: block;
     margin-top: 0.4rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: rgba(255, 255, 255, 0.6);
 }
 
 /* Description */
 .education-description {
     margin-top: 1rem;
-    font-size: 0.95rem;
+    font-size: 1.2rem;
     line-height: 1.6;
     color: rgba(255, 255, 255, 0.85);
 }
@@ -106,7 +126,7 @@
 }
 
 .education-tag {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
     padding: 0.35rem 0.75rem;
     border-radius: 20px;
     background: linear-gradient(135deg,
@@ -115,6 +135,96 @@
     border: 1px solid rgba(255, 255, 255, 0.1);
     color: #ffffff;
 }
+
+.education-highlights {
+    margin-top: 18px;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.education-highlights li {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.85);
+    position: relative;
+}
+
+/*toggle*/
+.education-collapse {
+    margin-top: 20px;
+}
+
+.education-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.9);
+
+    padding: 10px 14px;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    cursor: pointer;
+
+    transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.education-toggle:hover {
+    border-color: rgba(255, 255, 255, 0.18);
+    background: rgba(255, 255, 255, 0.07);
+    transform: translateY(-1px);
+}
+
+.education-toggleIcon {
+    display: inline-block;
+    transition: transform 0.2s ease;
+    opacity: 0.9;
+}
+
+.education-toggleIcon.is-open {
+    transform: rotate(180deg);
+}
+
+/* Panel colapsable con animación */
+.education-panel {
+    display: grid;
+    grid-template-rows: 0fr;
+    opacity: 0;
+    transition: grid-template-rows 0.25s ease, opacity 0.25s ease;
+    margin-top: 10px;
+}
+
+.education-panel.is-open {
+    grid-template-rows: 1fr;
+    opacity: 1;
+}
+
+.education-panel>* {
+    overflow: hidden;
+}
+
+/* Lista */
+.education-highlights {
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.education-highlights li {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.85);
+    position: relative;
+}
+
+
+
+
 
 /* Responsive */
 @media (max-width: 768px) {

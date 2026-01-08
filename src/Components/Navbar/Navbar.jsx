@@ -32,6 +32,7 @@ const Navbar = () => {
                 <li><AnchorLink className='anchor-link' href='#home'><p onClick={() => setMenu("home")}>Inicio</p></AnchorLink>{menu === "home" ? <img src={underline} alt='' /> : <></>}</li>
                 <li><AnchorLink className='anchor-link' offset={50} href='#about'><p onClick={() => setMenu("about")}>Sobre Mí</p></AnchorLink>{menu === "about" ? <img src={underline} alt='' /> : <></>}</li>
                 <li><AnchorLink className='anchor-link' offset={50} href='#experience'><p onClick={() => setMenu("experience")}>Experiencia</p></AnchorLink>{menu === "experience" ? <img src={underline} alt='' /> : <></>}</li>
+                <li><AnchorLink className='anchor-link' offset={50} href='#education'><p onClick={() => setMenu("education")}>Formación</p></AnchorLink>{menu === "education" ? <img src={underline} alt='' /> : <></>}</li>
                 <li><AnchorLink className='anchor-link' offset={50} href='#work'><p onClick={() => setMenu("work")}>Proyectos</p></AnchorLink>{menu === "work" ? <img src={underline} alt='' /> : <></>}</li>
                 <li><AnchorLink className='anchor-link' offset={50} href='#contact'><p onClick={() => setMenu("contact")}>Contacto</p></AnchorLink>{menu === "contact" ? <img src={underline} alt='' /> : <></>}</li>
             </ul>
