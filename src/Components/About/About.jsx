@@ -2,6 +2,8 @@ import React from 'react'
 import './About.css'
 import theme_pattern from '../../assets/theme_pattern.svg'
 import profile_img from '../../assets/img_about.jpg'
+import Education from '../../Components/About/education'
+
 
 const About = () => {
     return (
@@ -16,19 +18,20 @@ const About = () => {
                 </div>
                 <div className="about-right">
                     <div className="about-para">
-                        <p>Desarrollador de aplicaciones especializado en IA y Big Data</p>
-                        <p>Soy una persona apasionada por la tecnología y el deporte, con un don de gentes destacado. Me considero una persona familiar y estoy constantemente buscando oportunidades para desarrollarme profesionalmente y aprender.</p>
+                        <p>Técnico Superior en DAM | Especializado en IA & Big Data</p>
+                        <p>Actualmente desarrollo aplicaciones web para el sector logístico utilizando ASP .NET MVC y SQL Server. Diseño y construyo APIs basadas en microservicios con .NET 8, y participo activamente en reuniones con clientes para el análisis de requisitos y definición de nuevas funcionalidades.</p>
                     </div>
-                    <div className="about-skills">
+                    <Education></Education>
+                    {/* <div className="about-skills">
                         <div className="about-skill"><p>HTML & CSS</p><hr style={{ width: "50%" }} /></div>
                         <div className="about-skill"><p>React JS</p><hr style={{ width: "40%" }} /></div>
                         <div className="about-skill"><p>Java</p><hr style={{ width: "60%" }} /></div>
                         <div className="about-skill"><p>Python</p><hr style={{ width: "70%" }} /></div>
                         <div className="about-skill"><p>Kotlin</p><hr style={{ width: "65%" }} /></div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
-            {/* <div className="about-achievements">
+            {/* {<div className="about-achievements">
                 <div className="about-achievement">
                     <h1>10</h1>
                     <p>YEARS OF EXPERIENCE</p>
@@ -43,7 +46,7 @@ const About = () => {
                     <h1>18</h1>
                     <p>HAPPY CLIENTS</p>
                 </div>
-            </div> */}
+            </div>} */}
         </div>
     )
 }

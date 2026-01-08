@@ -9,7 +9,7 @@ const Footer = () => {
             <div className="footer-top">
                 <div className="footer-top-left">
                     <img src={footer_logo} alt="" />
-                    <p>Desarrollador Multiplataforma</p>
+                    <p>Software Developer</p>
                 </div>
                 {/* <div className="footer-top-right">
                     <div className="footer-email-input">
@@ -21,7 +21,7 @@ const Footer = () => {
             </div>
             <hr />
             <div className="footer-bottom">
-                <p className="footer-bottom-left">© 2024 Daniel Martínez.</p>
+                <p className="footer-bottom-left">© 2026 Daniel Martínez.</p>
                 {/* <div className="footer-bottom-right">
                     <p>Término de servicios</p>
                     <p>Política de privacidad</p>

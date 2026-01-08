@@ -59,12 +59,12 @@
     display: flex;
     justify-content: space-between;
     font-size: 18px;
+    margin-bottom: 50px;
 }
 
 .footer-bottom-right {
     display: flex;
     gap: 50px;
-    margin-bottom: 50px;
 }
 
 .footer-email-input:hover {
